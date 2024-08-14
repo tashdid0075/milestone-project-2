@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* shared style */
+body{
+    background-color: black;
+}
+
+.text-center-align{
+    text-align: center;
+}
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+
+.display-flex{
+    display: flex;
+}
+
+.btn-primary{
+    background-color: #E6533C;
+    border-radius: 42px; 
+    background: rgb(230, 83, 60);
+    padding: 1rem 2.5rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+.white-text{
+    color: white;
+}
+
+.orange{
+    color: #E6533C;
+
+}
+.section-title{
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 0%;
+    margin-bottom: 14px;
+
+}
+.section-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 34px;
+    
+
+}
+
+/* header nav bar style */
+
+.header{    
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+
+    
+
+}
+
+.navbar,
+.banner
+{
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1060px;
+    margin: auto;
+}
+
+.nav-links{
+    width: 465px;
+    height: 35px;
+    justify-content: space-between;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px; 
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    
+
+}
+.nav-button{
+    padding: 8px 20px;
+    border-radius: 46px;
+    background-color: #E6533C
+}
+
+.nav-link{
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+
+}
+.nav-header{
+    font-style:italic;
+    font-size: 2.25rem;
+}
+
+.banner-content{
+    max-width: 520px;
+}
+.banner-header{
+    font-size: 4.875rem;
+    font-weight: 900;
+    color: white;
+}
+
+.download-btn{
+    background-color: black;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 42px; 
+    padding: 1rem 2.5rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 1rem;
+
+
+}
+
+.blur-box{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px; 
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+
+}
+
+
+/* 
+main habit section */
+
+.habit-container,
+.run
+{
+    max-width: 1060px;
+    margin: 100px auto;
+}
+
+.habit-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 3.625rem;
+}
+.habit-image{
+    border-radius: 100px;
+    width: 11.25rem;
+    height: 11.25rem;
+}
+/* 
+main run section */
+
+.run{
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 18px; 
+    background: rgb(34, 34, 34);
+    margin-top: 100px;    
+}
+.run-text{
+    max-width: 443px;
+}
+
+.run-image-container{
+    width: 366px;
+    height: 312px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.run-image{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* bmi section */
+
+.bmi-calculator{
+    background: rgb(34, 34, 34);
+    max-width: 1440px;
+    min-height: 490px;
+    justify-content:space-around;
+    align-items: center;
+
+}
+.bmi-table td{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0.5px;
+    
+}
+
+.bmi-table tr{
+    text-align: left;
+    padding: 10px;
+    
+}
+
+.bmi-table table{
+    max-width: 310px;
+    min-height: 216px;
+    border-collapse: collapse;
+
+}
+
+.bmi-table th, td{
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+.bmi-form{
+    max-width: 577px;
+    
+
+}
+
+.bmi-form input
+{
+    padding: 10px 20px;
+    width: 40%;
+    border: none;
+    border-radius: 8px; 
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.5);
+
+
+    
+    
+
+}
+#gender{
+    padding: 10px 20px;
+    width: 47.5%;
+    border: none;
+    border-radius: 8px; 
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.5);
+
+}
+#activity{
+    width: 96%;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+    border-radius: 8px; 
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.5);
+}
+.bmi-section h1, .bmi-section p{
+    text-align: center;
+    
+}
+

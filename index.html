@@ -6,7 +6,138 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="inter-font">
+    <header class="header">
+        <nav class="navbar display-flex">
+            <h1 class="nav-header orange">Fitness</h1>
+            <ul class="nav-links display-flex">
+                <li class="nav-items"><a href="" class="nav-link"><btn class="nav-button">Home</btn></a></li>
+                <li class="nav-items"><a href="" class="nav-link">Service</a></li>
+                <li class="nav-items"><a href="" class="nav-link">Contact</a></li>
+                <li class="nav-items"><a href="" class="nav-link">About</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="banner display-flex">
+            <div class="banner-content">
+                <h1 class="banner-header">Get body in <span id="shape">shape</span> & stay healthy</h1>
+                <p class="section-description">A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</p>
+                <btn class="btn-primary">Join Club Now!</btn>
+                <button class="download-btn">Download App</button>
+
+            </div>
+            <img src="images/images 2.png" alt="" class="banner-image">
+        </div>
+        <!-- <div class="blur-box">
+            <h3 class="white-text">500+</h3>
+            <p class="section-description">Free Workout Videos</p>
+        </div>
+        <div class="blur-box">
+            <div class="circle"></div>
+            <div>
+                <h3 class="white-text">360+</h3>
+                <p class="section-description">Video Tutorial</p>
+            </div>
+        </div> -->
+    </header>
+
+    <main>
+        <section class="habits text-center-align">
+            <h1 class="habit-title white-text section-title">Change Your Habits</h1>
+
+            <p class="section-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+
+            <div class="habit-container">
+                <div class="habit-box">
+                    <img src="images/image 3.png" alt="" class="habit-image">
+                    <h4 class="habit-box-title white-text">Movement</h4>
+                    <p class="section-description">We believe fitness should be accessible to everyone</p>
+                </div>
+                <div class="habit-box">
+                    <img src="images/image 2.png" alt="" class="habit-image">
+                    <h4 class="habit-box-title white-text">Time</h4>
+                    <p class="section-description">We believe fitness should be accessible to everyone</p>
+                </div>
+                <div class="habit-box">
+                    <img src="images/image 4.png" alt="" class="habit-image">
+                    <h4 class="habit-box-title white-text">Practice</h4>
+                    <p class="section-description">We believe fitness should be accessible to everyone</p>
+                </div>
+                <div class="habit-box">
+                    <img src="images/image 5.png" alt="" class="habit-image">
+                    <h4 class="habit-box-title white-text">Weight Loss</h4>
+                    <p class="section-description">We believe fitness should be accessible to everyone</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="run display-flex">
+            <div class="run-text">
+                <h1 class="section-title white-text">Run an Extra Mile Easily</h1>
+                <p class="section-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+                <btn class="btn-primary">Join Now</btn>
+            </div>
+            <div class="run-image-container">
+                <img src="images/run.jpg" alt="" class="run-image">
+            </div>
+
+        </section>
+
+        <section class="bmi-section">
+            <h1 class="section-title white-text">BMI Calculator</h1>
+            <p class="section-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+
+            <div class="bmi-calculator display-flex">
+                <div class="bmi-table">
+                    <h2 class="bmi-title white-text">BMI Calculator Chart</h2>
+                    <table>
+                        <tr class="white-text">
+                            <th>BMI</th>
+                            <th>Weight Status</th>
+                        </tr>
+                        <tr>
+                            <td>Below 18.5</td>
+                            <td>Underweight</td>
+                        </tr>
+                        <tr>
+                            <td>18.5 - 24.9</td>
+                            <td>Healthy</td>
+                        </tr>
+                        <tr>
+                            <td>25 - 29.9</td>
+                            <td>Overweight</td>
+                        </tr>
+                        <tr>
+                            <td>30 and above</td>
+                            <td>Obese</td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="bmi-form">
+                    <h2 class="bmi-title white-text">Calculate Your BMI</h2>
+                    <p class="section-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
+
+                    <form>
+                        <input type="text" placeholder="Height/cm">
+                        <input type="text" placeholder="Weight/kg">
+                        <br>
+                        <input type="number" placeholder="Age">
+                        <select id="gender"><option value="">Gender</option></select>
+                        <br>
+                        <select id="activity"><option value="">Select an activity factor</option></select>
+                        <br>
+                        <btn class="btn-primary">Calculate</btn>
+                    </form>
+                </div>
+                
+    
+            </div>
+            
+        </section>
+    </main>
     
 </body>
 </html>
