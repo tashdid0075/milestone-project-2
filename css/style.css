@@ -188,6 +188,7 @@ main run section */
     background: rgb(34, 34, 34);
     max-width: 1440px;
     min-height: 490px;
+    margin: auto;
     justify-content:space-around;
     align-items: center;
 
@@ -259,3 +260,46 @@ main run section */
     
 }
 
+/* main team section */
+.team{
+    flex-direction: column;
+    align-items: center;
+
+}
+.trainers{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    max-width: 1060px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 18px; 
+    background: rgba(255, 255, 255, 0.1);
+
+}
+.trainers img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    
+}
+
+.trainer-image-container{
+    position: relative;
+    border-radius: 18px; 
+    background: rgba(0, 0, 0, 0.2);
+
+
+}
+.trainer-info{
+    position: absolute;
+    top: 240px;
+    left: 20px;
+    
+}
+
+.trainer-name{
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
