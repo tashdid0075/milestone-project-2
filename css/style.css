@@ -60,6 +60,7 @@ body{
 
 .header{    
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    position: relative;
 
     
 
@@ -89,7 +90,7 @@ body{
 .nav-button{
     padding: 8px 20px;
     border-radius: 46px;
-    background-color: #E6533C
+    background-color: #E6533C;
 }
 
 .nav-link{
@@ -125,11 +126,40 @@ body{
 
 }
 
-.blur-box{
+.blur-box2{
+    position: absolute;
+    width: 206px;
+    height: 96px;
+    left: 764px;
+    top: 556px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px; 
+    backdrop-filter: blur(20px);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px
+   
+
+
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    background-color: #E6533C;
+    border-radius: 100%;
+}
+.blur-box1{
+    position: absolute;
+    width: 193px;
+    height: 98px;
+    left: 1107px;
+    top: 260px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px; 
     backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, 0.1);
+
 
 }
 
@@ -288,7 +318,6 @@ main run section */
 .trainer-image-container{
     position: relative;
     border-radius: 18px; 
-    background: rgba(0, 0, 0, 0.2);
 
 
 }
@@ -296,10 +325,125 @@ main run section */
     position: absolute;
     top: 240px;
     left: 20px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
     
 }
 
 .trainer-name{
     font-size: 1.5rem;
     margin-bottom: 5px;
+}
+/* 
+main section membership */
+
+.membership-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.membership-card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1060px;
+    margin: auto;
+    gap: 20px;
+}
+.membership-card{
+    background: rgba(255, 255, 255, 0.1);
+    min-height: 500px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 18px;
+
+}
+.membership-details{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 34px;
+    text-align: left;
+}
+
+footer{
+    background: rgba(255, 255, 255, 0.1);
+    max-width: 1440px;
+    margin: auto;
+
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 102px;
+    justify-content: space-between;
+    max-width: 1060px;
+    margin: 70px auto;
+    padding-top: 30px;
+    
+    
+}
+.footer-text{
+    width: 443px;
+   
+
+}
+.footer-link-container{
+    text-align: left;
+    display: flex;
+    width: 181px;
+    flex-direction: column;
+}
+.footer-column{
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 152px;
+
+}
+.footer-link-container table{
+    width: 181px;
+    border: none;
+}
+
+.footer-link-container a{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+    border: none;
+    text-decoration: none;
+
+}
+.footer-title{
+    color: rgb(230, 83, 60);
+    font-size: 70px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+
+}
+
+.copyright-text{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-align: left;
+
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 1060px;
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
 }
