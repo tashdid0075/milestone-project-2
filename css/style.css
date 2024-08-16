@@ -23,7 +23,9 @@ body{
     display: flex;
 }
 
-.btn-primary{
+.btn-primary,
+.run-btn
+{
     background-color: #E6533C;
     border-radius: 42px; 
     background: rgb(230, 83, 60);
@@ -230,6 +232,7 @@ main run section */
     margin: auto;
     justify-content:space-around;
     align-items: center;
+    padding: 20px;
 
 }
 .bmi-table td{
@@ -288,6 +291,7 @@ main run section */
     padding: 10px 20px;
     margin-bottom: 40px;
     border-radius: 8px; 
+    border: none;
     background: rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.5);
 }
@@ -564,5 +568,23 @@ footer{
     }
     .bmi-table{
         text-align: left;
+    }
+    .bmi-calculator{
+        min-height: 772px;
+    }
+
+    .run-btn{
+        width: 100%;
+        text-align: center;
+        padding-left: 130px;
+        padding-right: 130px;
+    }
+
+    .run{
+        justify-content: center;
+        align-items: center;
+    }
+    .run-text{
+        min-width: 287px;
     }
 }
