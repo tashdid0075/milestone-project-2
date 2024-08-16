@@ -16,6 +16,7 @@
                 <li class="nav-items"><a href="" class="nav-link">Contact</a></li>
                 <li class="nav-items"><a href="" class="nav-link">About</a></li>
             </ul>
+            <img class="nav-icon" src="images/list.png" alt="" height="24px">
 
         </nav>
 
@@ -23,20 +24,22 @@
             <div class="banner-content">
                 <h1 class="banner-header">Get body in <span id="shape">shape</span> & stay healthy</h1>
                 <p class="section-description">A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</p>
-                <btn class="btn-primary">Join Club Now!</btn>
-                <button class="download-btn">Download App</button>
+                <div class="banner-buttons">
+                    <btn class="btn-primary banner-btn">Join Now!</btn>
+                    <button class="download-btn">Download App</button>
+                </div>
 
             </div>
             <img src="images/images 2.png" alt="" class="banner-image">
         </div>
-        <div class="blur-box1">
-            <h3 class="white-text">500+</h3>
+        <div class="blur-box1 display-flex">
+            <h3 class="white-text blur-h">500+</h3>
             <p class="section-description">Free Workout Videos</p>
         </div>
         <div class="blur-box2 display-flex">
             <div class="circle"></div>
             <div>
-                <h3 class="white-text">360+</h3>
+                <h3 class="white-text blur-h">360+</h3>
                 <p class="section-description">Video Tutorial</p>
             </div>
         </div>
@@ -121,14 +124,19 @@
                     <p class="section-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
 
                     <form>
-                        <input type="text" placeholder="Height/cm">
-                        <input type="text" placeholder="Weight/kg">
-                        <br>
-                        <input type="number" placeholder="Age">
-                        <select id="gender"><option value="">Gender</option></select>
-                        <br>
-                        <select id="activity"><option value="">Select an activity factor</option></select>
-                        <br>
+                        <div class="bmi-row-1">
+                            <input type="text" placeholder="Height/cm">
+                            <input type="text" placeholder="Weight/kg">
+                        </div>
+                        <div class="bmi-row-2">
+                            <input type="number" placeholder="Age">
+                            <select id="gender"><option value="">Gender</option></select>
+                        </div>
+
+                        <div class="bmi-row-3">
+                            <select id="activity"><option value="">Select an activity factor</option></select>
+                        </div>
+
                         <btn class="btn-primary">Calculate</btn>
                     </form>
                 </div>

@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* shared style */
+*{
+    padding: none;
+    margin: none;
+}
 body{
     background-color: black;
 }
@@ -65,7 +69,9 @@ body{
     
 
 }
-
+.nav-icon{
+    display: none;
+}
 .navbar,
 .banner
 {
@@ -128,8 +134,8 @@ body{
 
 .blur-box2{
     position: absolute;
-    width: 206px;
-    height: 96px;
+    max-width: 206px;
+    min-height: 96px;
     left: 764px;
     top: 556px;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -151,15 +157,18 @@ body{
 }
 .blur-box1{
     position: absolute;
-    width: 193px;
-    height: 98px;
+    max-width: 193px;
+    min-height: 98px;
     left: 1107px;
     top: 260px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px; 
     backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, 0.1);
-
+    flex-direction: column;
+    gap: 0px;
+    text-align: center;
+ 
 
 }
 
@@ -200,7 +209,7 @@ main run section */
 }
 
 .run-image-container{
-    width: 366px;
+    max-width: 366px;
     height: 312px;
     border-radius: 18px;
     overflow: hidden;
@@ -257,7 +266,6 @@ main run section */
 .bmi-form input
 {
     padding: 10px 20px;
-    width: 40%;
     border: none;
     border-radius: 8px; 
     background: rgba(255, 255, 255, 0.1);
@@ -270,7 +278,6 @@ main run section */
 }
 #gender{
     padding: 10px 20px;
-    width: 47.5%;
     border: none;
     border-radius: 8px; 
     background: rgba(255, 255, 255, 0.1);
@@ -278,16 +285,27 @@ main run section */
 
 }
 #activity{
-    width: 96%;
     padding: 10px 20px;
     margin-bottom: 40px;
     border-radius: 8px; 
     background: rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.5);
 }
-.bmi-section h1, .bmi-section p{
+.bmi-section h1, .bmi-section > p{
     text-align: center;
     
+}
+.bmi-row-1,
+.bmi-row-2
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 12px;
+    margin-bottom: 12px;
+}
+.bmi-row-3{
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 /* main team section */
@@ -318,15 +336,17 @@ main run section */
 .trainer-image-container{
     position: relative;
     border-radius: 18px; 
+    width: 313px;
+    height: 272px;
 
 
 }
 .trainer-info{
     position: absolute;
-    top: 240px;
+    top: 170px;
     left: 20px;
     width: 100%;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.4);
     
 }
 
@@ -446,4 +466,103 @@ footer{
     margin: auto;
     max-width: 1060px;
     border-top: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 576px){
+    .nav-links{
+        display: none;
+    }
+
+    .banner,
+    .run,
+    .footer-column,
+    .bmi-calculator
+    {
+        flex-direction: column;
+    }
+
+    .footer-column{
+        gap: 20px;
+    }
+
+    .banner-buttons{
+        display: flex;
+    }
+    .banner-header{
+        
+        font-size: 2.25rem;
+
+    }
+    .blur-box1{
+        width: 145.91px;
+        height: 74.09px;
+        left: 214.2px;
+        top: 576.6px;
+        display: flex;
+        flex-direction: column;
+        gap: none;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    .blur-box2{
+        left:32px;
+        top:800px;
+        width: 156px;
+        height: 73px;
+    }
+    .blur-h{
+        line-height: 0%;
+        font-size: 2rem;
+        margin-bottom: 5px;
+    }
+
+    /* main-habit */
+
+    .habit-container,
+    .membership-card-container,
+    .trainers,
+    .footer-content
+    {
+        grid-template-columns: 1fr;
+    }
+    .habit-container,
+    .membership-section
+    {
+        width: 80%;
+    }
+
+    .membership-details{
+        font-size: 1.35rem;
+    }
+
+    .section-title{
+        font-size: 2.25rem;
+    }
+
+    .run-image-container{
+        margin-top: 30px;
+    }
+    .footer-text{
+        width: 100%;
+    }
+
+    .trainer-name{
+        font-size: 1.2rem;
+    }
+
+    .trainer-info{
+        top:180px
+    }
+    .nav-icon{
+        display: inline;
+    }
+    .copyright{
+        height: 200px;
+        width: 90%;
+    }
+    .bmi-table{
+        text-align: left;
+    }
 }
